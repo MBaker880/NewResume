@@ -1,0 +1,119 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+  }
+
+  #this {
+    padding-left: 60px;
+  }
+
+  .languages{
+    width: 110px;
+    height: 110px;
+  }
+  .card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    border: none;
+    width: 150px;
+    height: 250px;
+  }
+
+/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-card {
+    background-color: transparent;
+    width: 150px;
+    height: 250px;
+  }
+  
+  /* This container is needed to position the front and back side */
+  .flip-card-inner {
+   position: relative; 
+    width: 100%;
+    height: 100%;
+    text-align: center;
+  }
+  
+  /* Position the front and back side */
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+  }
+  
+  /* Style the front side (fallback if image is missing) */
+  .flip-card-front {
+    background-color: #bbb;
+    width: 150px;
+    height: 250px;
+  }
+
+
+  #pikachu, #charmander {
+    background-color: #f4623a!important;
+    transform: rotateY(180deg);
+    width: 150px;
+    height: 250px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow: hidden;
+  }
+
+  #pika {
+    transform: rotateY(180deg);
+    background-color: #f4623a!important;
+  }
+
+  #char {
+    background-color:transparent;
+  }
+
+  #myContainer {
+    width: 400px;
+    height: 400px;
+    position: relative;
+  
+  }
+  #myAnimation {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    position: relative;
+    -webkit-animation: myfirst 5s infinite; /* Safari 4.0 - 8.0 */
+    -webkit-animation-direction: alternate; /* Safari 4.0 - 8.0 */
+    animation: myfirst 5s infinite;
+    animation-direction: alternate;
+  }
+  
+  @keyframes myfirst {
+    0%   {right: 0px; }
+    50%  {right: 525px;}
+    100% {right: 0px; }
+  }  
+
+  #myContainer2 {
+    width: 400px;
+    height: 400px;
+    position: relative;
+  }
+  #myAnimation2 {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    position: relative;
+    -webkit-animation: myfirst2 5s infinite; /* Safari 4.0 - 8.0 */
+    -webkit-animation-direction: alternate; /* Safari 4.0 - 8.0 */
+    animation: myfirst2 5s infinite;
+    animation-direction: alternate;
+  }
+
+  @keyframes myfirst2 {
+    0%   {left: 1050px; }
+    50%  {left: 525px; }
+    100% {left: 1050px; }
+    100% {left: 1050px; }
+  }
