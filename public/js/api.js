@@ -28,3 +28,19 @@ fetch(`https://pokeapi.co/api/v2/${_condition}/${_pocketmonster}`)
       selector.innerHTML = pokeIMG;
   }
       );
+
+var unirest = require("unirest");
+
+var req = unirest("GET", "https://wordsapiv1.p.rapidapi.com/words/hatchback/typeOf");
+      
+req.headers({
+    "x-rapidapi-host": "wordsapiv1.p.rapidapi.com",
+	"x-rapidapi-key": "6ad87f66a8mshaec146d42942b3ep16a80djsn018f84fcce5a"
+});
+      
+      
+req.end(function (res) {
+    if (res.error) throw new Error(res.error);
+      
+    console.log(res.body);
+});

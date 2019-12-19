@@ -53,7 +53,7 @@
 
 
   #pikachu, #charmander {
-    background-color: #f4623a!important;
+    background-color: #34d2a2!important;
     transform: rotateY(180deg);
     width: 150px;
     height: 250px;
@@ -65,7 +65,7 @@
 
   #pika {
     transform: rotateY(180deg);
-    background-color: #f4623a!important;
+    background-color: #34d2a2!important;
   }
 
   #char {
@@ -91,7 +91,7 @@
   
   @keyframes myfirst {
     0%   {right: 0px; }
-    50%  {right: 525px;}
+    50%  {right: 435px;}
     100% {right: 0px; }
   }  
 
@@ -112,8 +112,7 @@
   }
 
   @keyframes myfirst2 {
-    0%   {left: 1050px; }
-    50%  {left: 525px; }
-    100% {left: 1050px; }
-    100% {left: 1050px; }
+    0%   {left: 1000px; }
+    50%  {left: 385px; }
+    100% {left: 1000px; }
   }
